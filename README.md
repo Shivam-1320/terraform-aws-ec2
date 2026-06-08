@@ -128,19 +128,16 @@ public_dns  = ec2-xx-xx-xx-xx.compute.amazonaws.com
 
 ### Terraform Apply Successful
 
-> Insert screenshot here
 
 ![Terraform Apply](images/terraform-apply.png)
 
 ### AWS EC2 Instance Running
 
-> Insert screenshot here
 
 ![EC2 Running](images/ec2-running.png)
 
 ### Terraform Outputs
 
-> Insert screenshot here
 
 ![Terraform Outputs](images/terraform-output.png)
 
