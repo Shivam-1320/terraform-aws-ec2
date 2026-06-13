@@ -1,7 +1,12 @@
 terraform {
   required_providers {
     aws = {
+<<<<<<< HEAD
       source = "hashicorp/aws"
+=======
+      source  = "hashicorp/aws"
+      version = "~> 6.0"
+>>>>>>> af33c2db38991f2ce4dda3744df5169b2aabfa6e
     }
   }
 }
@@ -10,6 +15,7 @@ provider "aws" {
   region = var.aws_region
 }
 
+<<<<<<< HEAD
 resource "aws_vpc" "production_vpc" {
 
   cidr_block = "10.0.0.0/16"
@@ -97,4 +103,15 @@ resource "aws_instance" "server1" {
     ManagedBy   = "Terraform"
   }
 
+=======
+resource "aws_instance" "web" {
+  ami           = var.ami_id
+  instance_type = var.instance_type
+
+  tags = {
+    Name        = var.instance_name
+    Environment = "Lab"
+    ManagedBy   = "Terraform"
+  }
+>>>>>>> af33c2db38991f2ce4dda3744df5169b2aabfa6e
 }

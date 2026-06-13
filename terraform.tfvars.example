@@ -1,4 +1,8 @@
 aws_region    = "ap-south-1"
 ami_id        = "ami-xxxxxxxx"
 instance_type = "t3.micro"
+<<<<<<< HEAD
 instance_name = "server1"
+=======
+instance_name = "terraform-web"
+>>>>>>> af33c2db38991f2ce4dda3744df5169b2aabfa6e
