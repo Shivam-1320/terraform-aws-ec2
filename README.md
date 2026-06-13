@@ -1,7 +1,6 @@
-<<<<<<< HEAD
 # Terraform AWS Web Infrastructure
 
-Deploy AWS infrastructure using Terraform, including a custom VPC, public and private subnets, security groups, and an EC2 instance.
+Deploy AWS infrastructure using Terraform, including a custom VPC, public and private subnets, a security group, and an EC2 instance.
 
 ## Overview
 
@@ -9,13 +8,13 @@ This project demonstrates Infrastructure as Code (IaC) using Terraform to provis
 
 The infrastructure includes:
 
-* Custom VPC
-* Public Subnet
-* Private Subnet
-* Security Group
-* EC2 Instance
-* Terraform Variables
-* Terraform Outputs
+- Custom VPC
+- Public Subnet
+- Private Subnet
+- Security Group
+- EC2 Instance
+- Terraform Variables
+- Terraform Outputs
 
 This project was created to practice AWS networking fundamentals, Terraform resource dependencies, and infrastructure provisioning.
 
@@ -46,43 +45,22 @@ Security Group
 
 ## Resources Created
 
-| Resource       | Purpose                                    |
-| -------------- | ------------------------------------------ |
-| VPC            | Custom AWS network                         |
-| Public Subnet  | Hosts public-facing resources              |
-| Private Subnet | Reserved for future internal resources     |
-| Security Group | Controls inbound and outbound traffic      |
-| EC2 Instance   | Compute resource deployed in public subnet |
+| Resource | Purpose |
+|----------|---------|
+| VPC | Custom AWS network |
+| Public Subnet | Hosts public-facing resources |
+| Private Subnet | Reserved for future internal resources |
+| Security Group | Controls inbound and outbound traffic |
+| EC2 Instance | Compute resource deployed in public subnet |
 
 ---
-=======
-# Terraform AWS EC2 Deployment
-
-Deploy an Amazon EC2 instance on AWS using Terraform with variables, outputs, and resource tagging.
-
-## Overview
-
-This project demonstrates Infrastructure as Code (IaC) using Terraform to provision an EC2 instance in AWS. It uses Terraform variables for configuration, outputs for resource information, and follows a clean project structure suitable for learning and portfolio purposes.
-
-## Features
-
-* Deploy AWS EC2 instance using Terraform
-* Configurable through variables
-* Resource tagging
-* Outputs for instance details
-* Version-controlled infrastructure
-* Beginner-friendly Terraform project
->>>>>>> af33c2db38991f2ce4dda3744df5169b2aabfa6e
 
 ## Project Structure
 
 ```text
-<<<<<<< HEAD
 terraform-aws-web-infrastructure/
-
 ├── diagrams/
 │   └── architecture.png
-│
 ├── images/
 │   ├── terraform-plan.png
 │   ├── terraform-apply.png
@@ -91,69 +69,42 @@ terraform-aws-web-infrastructure/
 │   ├── security-group.png
 │   ├── ec2-instance.png
 │   └── terraform-output.png
-│
 ├── main.tf
 ├── variables.tf
 ├── outputs.tf
 ├── terraform.tfvars.example
-│
-=======
-terraform-aws-ec2/
-├── main.tf
-├── variables.tf
-├── terraform.tfvars.example
-├── outputs.tf
->>>>>>> af33c2db38991f2ce4dda3744df5169b2aabfa6e
 ├── .gitignore
 ├── .terraform.lock.hcl
 └── README.md
 ```
 
-<<<<<<< HEAD
 ---
 
 ## Technologies Used
 
-* Terraform
-* AWS VPC
-* AWS EC2
-* AWS Security Groups
-* AWS Provider
-* Git & GitHub
+- Terraform
+- AWS VPC
+- AWS EC2
+- AWS Security Groups
+- AWS Provider
+- Git & GitHub
 
 ---
 
-=======
-## Technologies Used
-
-* Terraform
-* Amazon EC2
-* AWS Provider
-* Git & GitHub
-
->>>>>>> af33c2db38991f2ce4dda3744df5169b2aabfa6e
 ## Prerequisites
 
 Before using this project, ensure you have:
 
-* Terraform installed
-* AWS account
-* AWS CLI configured
-<<<<<<< HEAD
-* Appropriate AWS permissions
+- Terraform installed
+- AWS account
+- AWS CLI configured
+- Appropriate AWS permissions
 
 ---
 
 ## Configuration
 
-Create:
-=======
-* Appropriate AWS permissions to create EC2 instances
-
-## Configuration
-
 Create a file named:
->>>>>>> af33c2db38991f2ce4dda3744df5169b2aabfa6e
 
 ```text
 terraform.tfvars
@@ -162,21 +113,12 @@ terraform.tfvars
 Example:
 
 ```hcl
-<<<<<<< HEAD
 ami_id        = "ami-xxxxxxxxxxxxxxxxx"
 instance_type = "t3.micro"
 ```
 
 ---
 
-=======
-aws_region    = "ap-south-1"
-ami_id        = "ami-xxxxxxxxxxxxxxxxx"
-instance_type = "t3.micro"
-instance_name = "terraform-web"
-```
-
->>>>>>> af33c2db38991f2ce4dda3744df5169b2aabfa6e
 ## Terraform Workflow
 
 Initialize Terraform:
@@ -185,15 +127,12 @@ Initialize Terraform:
 terraform init
 ```
 
-<<<<<<< HEAD
 Format Terraform files:
 
 ```bash
 terraform fmt
 ```
 
-=======
->>>>>>> af33c2db38991f2ce4dda3744df5169b2aabfa6e
 Validate configuration:
 
 ```bash
@@ -212,68 +151,47 @@ Deploy infrastructure:
 terraform apply
 ```
 
-<<<<<<< HEAD
-=======
 Refresh Terraform state:
 
 ```bash
 terraform apply -refresh-only
 ```
 
->>>>>>> af33c2db38991f2ce4dda3744df5169b2aabfa6e
 Destroy infrastructure:
 
 ```bash
 terraform destroy
 ```
 
-<<<<<<< HEAD
 ---
 
-=======
->>>>>>> af33c2db38991f2ce4dda3744df5169b2aabfa6e
 ## Outputs
 
 After successful deployment Terraform displays:
 
-<<<<<<< HEAD
-* Public IP Address
-* Instance ID
-=======
-* Instance ID
-* Public IP Address
-* Public DNS
->>>>>>> af33c2db38991f2ce4dda3744df5169b2aabfa6e
+- Public IP Address
+- Instance ID
 
 Example:
 
 ```text
-<<<<<<< HEAD
-public_ip   = 65.2.40.147
-instance_id = i-080a753954822a31c
+public_ip   = xx.xx.xx.xx
+instance_id = i-xxxxxxxxxxxxxxxxx
 ```
 
 ---
 
-=======
-instance_id = i-xxxxxxxxxxxxxxxxx
-public_ip   = xx.xx.xx.xx
-public_dns  = ec2-xx-xx-xx-xx.compute.amazonaws.com
-```
-
->>>>>>> af33c2db38991f2ce4dda3744df5169b2aabfa6e
 ## Terraform Concepts Demonstrated
 
-* Providers
-* Resources
-* Variables
-* Outputs
-<<<<<<< HEAD
-* Resource Dependencies
-* State Management
-* Resource Tagging
-* AWS Networking Basics
-* VPC and Subnet Configuration
+- Providers
+- Resources
+- Variables
+- Outputs
+- Resource Dependencies
+- State Management
+- Resource Tagging
+- AWS Networking Basics
+- VPC and Subnet Configuration
 
 ---
 
@@ -308,40 +226,18 @@ public_dns  = ec2-xx-xx-xx-xx.compute.amazonaws.com
 ![Terraform Outputs](images/terraform-output.png)
 
 ---
-=======
-* State Management
-* Resource Tagging
-
-## Screenshots
-
-### Terraform Apply Successful
-
-
-![Terraform Apply](images/terraform-apply.png)
-
-### AWS EC2 Instance Running
-
-
-![EC2 Running](images/ec2-running.png)
-
-### Terraform Outputs
-
-
-![Terraform Outputs](images/terraform-output.png)
->>>>>>> af33c2db38991f2ce4dda3744df5169b2aabfa6e
 
 ## Learning Objectives
 
 This project was created to practice:
 
-* Infrastructure as Code (IaC)
-<<<<<<< HEAD
-* AWS Networking Fundamentals
-* Terraform Resource Dependencies
-* VPC and Subnet Creation
-* Security Group Configuration
-* EC2 Provisioning
-* GitHub Project Documentation
+- Infrastructure as Code (IaC)
+- AWS Networking Fundamentals
+- Terraform Resource Dependencies
+- VPC and Subnet Creation
+- Security Group Configuration
+- EC2 Provisioning
+- GitHub Project Documentation
 
 ---
 
@@ -349,12 +245,12 @@ This project was created to practice:
 
 Planned upgrades:
 
-* Internet Gateway
-* Route Tables
-* Route Table Associations
-* NGINX Installation using User Data
-* Load Balancer
-* Multi-Instance Deployment
+- Internet Gateway
+- Route Tables
+- Route Table Associations
+- NGINX Installation using User Data
+- Load Balancer
+- Multi-Instance Deployment
 
 ---
 
@@ -365,17 +261,3 @@ Planned upgrades:
 RHCSA Certified Linux Administrator
 
 Learning AWS, Terraform, Cloud Infrastructure, Automation, and Cybersecurity.
-=======
-* AWS EC2 provisioning
-* Terraform state management
-* Terraform variables and outputs
-* GitHub project organization
-
-## Author
-
-Pankaj
-
-RHCSA Certified Linux Administrator
-
-Learning AWS, Terraform, DevOps, and Cloud Infrastructure
->>>>>>> af33c2db38991f2ce4dda3744df5169b2aabfa6e
